@@ -1,3 +1,5 @@
+package neo4j;
+
 /**
  * Created by student on 7/17/2014.
  */
