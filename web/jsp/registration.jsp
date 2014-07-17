@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-    <form class="form-signin" action="/registration" method="post">
+    <form class="form-signin" action="/reg" method="post">
         <h2 class="form-signin-heading">Регистрация</h2>
 
         <div class="control-group" id="login">
