@@ -1,4 +1,4 @@
-package hrenbook.auth;
+package hrenbook.auth.old;
 
 import hrenbook.DB_GLOBAL.neo4j.Connection;
 import hrenbook.auth.abstracts.Registrator;
