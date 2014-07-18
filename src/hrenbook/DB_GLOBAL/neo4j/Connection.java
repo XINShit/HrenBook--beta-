@@ -1,4 +1,4 @@
-package hrenbook.DB_GLOBAL;
+package hrenbook.DB_GLOBAL.neo4j;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.RelationshipType;
@@ -7,7 +7,7 @@ import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 /**
  * Created by student on 7/17/2014.
  */
-public class neo4j {
+public class Connection {
     private static enum RelTypes implements RelationshipType
     {
         FRIENDS_WITH

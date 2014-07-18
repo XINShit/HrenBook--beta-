@@ -1,11 +1,8 @@
 package hrenbook.auth;
 
-import hrenbook.DB_GLOBAL.neo4j;
+import hrenbook.DB_GLOBAL.neo4j.Connection;
 import hrenbook.auth.abstracts.Registrator;
-import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.graphdb.*;
-
-import java.util.Map;
 
 /**
  * Created by student on 7/17/2014.
@@ -15,7 +12,7 @@ public class RegistrationImpl extends Registrator {
 
     @Override
     public void reg(String login, String password, String name, String lastname, Integer age) throws IllegalArgumentException {
-        GraphDatabaseService graphDB = neo4j.getGraphDB();
+        GraphDatabaseService graphDB = Connection.getGraphDB();
         try (Transaction tx = graphDB.beginTx()) {
             /*String querry = "MATCH (u:User) WHERE login=" + login + " return u";
             System.out.println(querry);

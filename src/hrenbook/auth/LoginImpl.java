@@ -1,6 +1,6 @@
 package hrenbook.auth;
 
-import hrenbook.DB_GLOBAL.neo4j;
+import hrenbook.DB_GLOBAL.neo4j.Connection;
 import hrenbook.auth.abstracts.Loginer;
 import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.graphdb.GraphDatabaseService;
@@ -18,7 +18,7 @@ public class LoginImpl extends Loginer {
     @Override
     public long login(String login, String password) throws IllegalArgumentException {
 
-        GraphDatabaseService graphDB = neo4j.getGraphDB();
+        GraphDatabaseService graphDB = Connection.getGraphDB();
         try (Transaction tx = graphDB.beginTx()) {
             String querry = "MATCH (u:User) WHERE login=" + login + " AND password=" + password + " return u";
             System.out.println(querry);

@@ -24,6 +24,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="noe4j" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.31-bin" level="project" />
   </component>
 </module>
 

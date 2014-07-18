@@ -9,6 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="library" level="project" name="noe4j" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.31-bin" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="HrenBook--beta-/web/Web" />
