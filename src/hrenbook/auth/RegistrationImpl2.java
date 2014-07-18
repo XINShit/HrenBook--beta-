@@ -2,6 +2,10 @@ package hrenbook.auth;
 
 import hrenbook.DB_GLOBAL.MySql.Constant;
 import hrenbook.auth.abstracts.Registrator;
+import org.neo4j.graphdb.DynamicLabel;
+import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Node;
+import org.neo4j.graphdb.Transaction;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +17,7 @@ import java.sql.SQLException;
  */
 public class RegistrationImpl2 extends Registrator {
 
-    private void reg_login_and_password(String login,String password) {
+    private void reg_login_and_password(String login, String password, long nodeid) {
         Connection connection = hrenbook.DB_GLOBAL.MySql.Connection.getConnection();
         try {
 
@@ -33,7 +37,7 @@ public class RegistrationImpl2 extends Registrator {
                     "VALUES(?,?,?)");
             preparedStatement1.setString(1,login);
             preparedStatement1.setString(2,password);
-            preparedStatement1.setInt(3,-1);
+            preparedStatement1.setLong(3,nodeid);
             if(preparedStatement1.executeUpdate()==0) {
                 throw new IllegalArgumentException("Can't connect to DB!");
             }
@@ -42,10 +46,37 @@ public class RegistrationImpl2 extends Registrator {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Registr user at neo4j
+     * @param name name user
+     * @param lastname lastname
+     * @param age age
+     * @return id NODE
+     */
+    private long reg_at_neo4j(String name,String lastname,Integer age) {
+        GraphDatabaseService graphDB = hrenbook.DB_GLOBAL.neo4j.Connection.getGraphDB();
+        Long id = -1l;
+        try (Transaction tx = graphDB.beginTx()) {
+            Node user = graphDB.createNode(DynamicLabel.label("User"));
+
+            user.setProperty("name", name);
+            user.setProperty("lastname", lastname);
+            user.setProperty("age", age);
+            id = user.getId();
+            tx.success();
+        }
+        if(id == -1) {
+            throw new NullPointerException("can't create profile ant Graph DB!");
+        }
+        return id;
+    }
     @Override
     public void reg(String login, String password, String name, String lastname, Integer age) throws IllegalArgumentException {
-        //Reg at MYSQL
-        reg_login_and_password(login,password);
         //Reg at neo4j
+        long nodeid = reg_at_neo4j(name,lastname,age);
+        //Reg at MYSQL
+        reg_login_and_password(login,password,nodeid);
+
     }
 }

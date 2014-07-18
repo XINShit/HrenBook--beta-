@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe71e794-009d-4224-9b6a-aca595775c84" name="Default" comment="Upload full working project on TOMCAT with libs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.31-bin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_31_bin.xml" />
-      <change type="DELETED" beforePath="C:\Users\student\Documents\GitHub\HrenBook--beta-\src\hrenbook\main.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\student\Documents\GitHub\HrenBook--beta-\src\hrenbook\DB_GLOBAL\Constant.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java" />
-      <change type="MOVED" beforePath="C:\Users\student\Documents\GitHub\HrenBook--beta-\src\hrenbook\DB_GLOBAL\neo4j.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HrenBook--beta-.iml" afterPath="$PROJECT_DIR$/.idea/HrenBook--beta-.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/auth/LoginImpl.java" afterPath="$PROJECT_DIR$/src/hrenbook/auth/LoginImpl.java" />
+    <list default="true" id="fe71e794-009d-4224-9b6a-aca595775c84" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hrenbook/auth/LoginImpl2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java" afterPath="$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl.java" afterPath="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java" afterPath="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HrenBook--beta-.iws" />
@@ -39,50 +28,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Connection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="999">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationImpl2.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegistrationImpl2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6094118" vertical-offset="281" max-vertical-offset="783">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="981" max-vertical-offset="1782">
+              <caret line="46" column="9" selection-start-line="20" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#reg_login_and_password#0;class#RegistrationImpl2#0" expanded="false" />
-                <marker date="1405677083755" expanded="true" signature="601:652" placeholder="SELECT count..users..." />
-                <marker date="1405677083755" expanded="true" signature="1115:1192" placeholder="INSERT INTO ..." />
-                <marker date="1405677083755" expanded="true" signature="117:144" placeholder="INSERT INTO ..." />
+                <element signature="docComment;method#reg_at_neo4j#0;class#RegistrationImpl2#0" expanded="false" />
+                <element signature="method#reg_at_neo4j#0;class#RegistrationImpl2#0" expanded="false" />
+                <marker date="1405677553096" expanded="true" signature="770:821" placeholder="SELECT count..users..." />
+                <marker date="1405677553096" expanded="true" signature="1284:1361" placeholder="INSERT INTO ..." />
+                <marker date="1405677553096" expanded="true" signature="272:299" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java">
+      <file leaf-file-name="LoginImpl2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/LoginImpl2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="918">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="43" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1377">
+              <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1405678139170" expanded="true" signature="844:921" placeholder="SELECT id FR..users..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.java">
+      <file leaf-file-name="MainEngine.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="0.6164383" vertical-offset="270" max-vertical-offset="999">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,11 +89,13 @@
         <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java" />
-        <option value="$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/main.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/q.java" />
+        <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/auth/abstracts/LoginImpl2.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/auth/LoginImpl2.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java" />
       </list>
     </option>
   </component>
@@ -236,6 +221,28 @@
               <option name="myItemId" value="hrenbook" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HrenBook--beta-" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HrenBook--beta-" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hrenbook" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -256,6 +263,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HrenBook--beta-" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HrenBook--beta-" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hrenbook" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abstracts" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,6 +743,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -720,17 +758,21 @@
       <updated>1405672701901</updated>
       <workItem from="1405672701953" duration="1005000" />
       <workItem from="1405673712295" duration="466000" />
-      <workItem from="1405674198466" duration="2884000" />
+      <workItem from="1405674198466" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="Upload full working project on TOMCAT with libs">
       <created>1405673921760</created>
       <updated>1405673921760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Register in MYSQL only login and pass">
+      <created>1405677107763</created>
+      <updated>1405677107763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4355000" />
+    <option name="totallyTimeSpent" value="5463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -815,7 +857,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Upload full working project on TOMCAT with libs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload full working project on TOMCAT with libs" />
+    <MESSAGE value="Register in MYSQL only login and pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register in MYSQL only login and pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -861,7 +904,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="891">
           <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -969,42 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/LoginImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="972">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1026">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="918">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1019,16 +1032,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43150684" vertical-offset="0" max-vertical-offset="513">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/abstracts/Loginer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30821916" vertical-offset="0" max-vertical-offset="438">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/LoginImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="972">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="1026">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6094118" vertical-offset="281" max-vertical-offset="783">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="981" max-vertical-offset="1782">
+          <caret line="46" column="9" selection-start-line="20" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#reg_login_and_password#0;class#RegistrationImpl2#0" expanded="false" />
-            <marker date="1405677083755" expanded="true" signature="601:652" placeholder="SELECT count..users..." />
-            <marker date="1405677083755" expanded="true" signature="1115:1192" placeholder="INSERT INTO ..." />
-            <marker date="1405677083755" expanded="true" signature="117:144" placeholder="INSERT INTO ..." />
+            <element signature="docComment;method#reg_at_neo4j#0;class#RegistrationImpl2#0" expanded="false" />
+            <element signature="method#reg_at_neo4j#0;class#RegistrationImpl2#0" expanded="false" />
+            <marker date="1405677553096" expanded="true" signature="770:821" placeholder="SELECT count..users..." />
+            <marker date="1405677553096" expanded="true" signature="1284:1361" placeholder="INSERT INTO ..." />
+            <marker date="1405677553096" expanded="true" signature="272:299" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/LoginImpl2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1377">
+          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1405678139170" expanded="true" signature="844:921" placeholder="SELECT id FR..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/MainEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6164383" vertical-offset="270" max-vertical-offset="999">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

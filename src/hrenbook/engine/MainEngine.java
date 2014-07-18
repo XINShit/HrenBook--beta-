@@ -1,8 +1,9 @@
 package hrenbook.engine;
 
 
-import hrenbook.DB_GLOBAL.MySql.Connection;
+
 import hrenbook.auth.LoginImpl;
+import hrenbook.auth.LoginImpl2;
 import hrenbook.auth.RegistrationImpl;
 import hrenbook.auth.RegistrationImpl2;
 import hrenbook.auth.abstracts.Loginer;
@@ -14,8 +15,10 @@ import hrenbook.auth.abstracts.Registrator;
 public class MainEngine {
     public MainEngine()
     {
-        Connection.run();
-        loginer = new LoginImpl();
+        hrenbook.DB_GLOBAL.MySql.Connection.run();
+        hrenbook.DB_GLOBAL.neo4j.Connection.run();
+
+        loginer = new LoginImpl2();
         registrator = new RegistrationImpl2();
     }
     Loginer loginer = null;
