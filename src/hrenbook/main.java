@@ -9,6 +9,6 @@ public class main {
     public static void main(String[] args) {
         MainEngine mainEngine = new MainEngine();
        // mainEngine.login("al","bert");
-        mainEngine.Register("al","bert");
+        //mainEngine.Register("al","bert");
     }
 }

@@ -18,8 +18,8 @@ public class MainEngine {
     Loginer loginer = null;
     Registrator registrator = null;
 
-    public void Register(String login,String password) {
-        registrator.reg(login,password);
+    public void Register(String login,String password,String name,String lastname,Integer age) {
+        registrator.reg(login,password,name,lastname,age);
     }
     public long login(String login,String password) {
        return loginer.login(login,password);
