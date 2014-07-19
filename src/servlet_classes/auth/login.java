@@ -38,13 +38,15 @@ public class login extends HttpServlet {
                 wrongPasswordEexception.printStackTrace();
 
                 req.setAttribute("error",wrongPasswordEexception.getMessage());
-
+                req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);
+                return;
             } catch (Exception e){
                 e.printStackTrace();
-                req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
+                req.getRequestDispatcher("/jsp/404.htm").forward(req, resp);
+                return;
             }
         }
-
+        /*
         Long myId = MainEngine.getIdFromSSID(req.getSession().getId());
         if(myId != null) {
             try {
@@ -55,8 +57,9 @@ public class login extends HttpServlet {
                 req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
                 e.printStackTrace();
             }
-        }
-        req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);
+        }*/
+        resp.sendRedirect("/profile");
+        //req.getRequestDispatcher("/jsp/profile.jsp").forward(req, resp);
     }
 }
 
