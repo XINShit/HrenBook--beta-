@@ -44,6 +44,6 @@ public class LoginImpl2 extends Loginer {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        throw new WrongPasswordEexception("Bal login or password");
+        throw new WrongPasswordEexception("Bad login or password");
     }
 }

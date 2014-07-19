@@ -54,7 +54,7 @@
                 </select>
             </div>
         </div>
-
+        ${error}
 
         <input type="submit" class="btn btn-large btn-block btn-primary" value="Зарегистрироваться" name="action">
     </form>

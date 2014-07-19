@@ -1,5 +1,7 @@
 package hrenbook.engine;
 
+import hrenbook.Exceptions.UserExcistingException;
+import hrenbook.Exceptions.WrongPasswordEexception;
 import hrenbook.auth.LoginImpl2;
 import hrenbook.auth.RegistrationImpl2;
 import hrenbook.auth.abstracts.Loginer;
@@ -31,11 +33,11 @@ public class MainEngine {
     static Loginer loginer = null;
     static Registrator registrator = null;
 
-    public static  void Register(String login,String password,String email,String name,String lastname,Integer age) {
+    public static  void Register(String login,String password,String email,String name,String lastname,Integer age) throws UserExcistingException {
         System.out.println("try to reg at main engine");
         registrator.reg(login,password,email,name,lastname,age);
     }
-    public static void login(String login,String password,String ssid) {
+    public static void login(String login,String password,String ssid) throws WrongPasswordEexception {
         System.out.println("Try to loggin with : "+login+" "+password+" "+ssid);
         long idnode = loginer.login(login, password);
         idStorage.put(ssid,idnode);

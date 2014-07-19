@@ -25,6 +25,7 @@
                 <input type="password" class="input-block-level" placeholder="Password" name="password">
             </div>
         </div>
+        ${error}
         <input type="submit" class="btn btn-large btn-block btn-primary" value="Войти" name="action">
     </form>
 </div>

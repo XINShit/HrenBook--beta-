@@ -1,5 +1,6 @@
 package servlet_classes.auth;
 
+import hrenbook.Exceptions.WrongPasswordEexception;
 import hrenbook.engine.MainEngine;
 
 import javax.servlet.ServletException;
@@ -27,9 +28,20 @@ public class login extends HttpServlet {
             MainEngine.init();
         }
         if(req.getParameter("action") != null) {
+            try {
+                MainEngine.login(req.getParameter("login").toString(),
+                        req.getParameter("password").toString(),req.getSession().getId());
+            } catch (WrongPasswordEexception wrongPasswordEexception) {
+                wrongPasswordEexception.printStackTrace();
 
-            MainEngine.login(req.getParameter("login").toString(),
-                    req.getParameter("password").toString(),req.getSession().getId());
+                req.setAttribute("error","<div class=\"alert alert-danger\" role=\"alert\">" +
+                        wrongPasswordEexception.getMessage() +
+                        "</div>");
+
+            } catch (Exception e){
+                e.printStackTrace();
+                req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
+            }
         }
         req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);
     }

@@ -1,5 +1,6 @@
 package servlet_classes.auth;
 
+import hrenbook.Exceptions.UserExcistingException;
 import hrenbook.engine.MainEngine;
 
 
@@ -29,9 +30,19 @@ public class registration extends HttpServlet {
                 MainEngine.init();
             }
 
-            MainEngine.Register(req.getParameter("login"),req.getParameter("password"),
-                    req.getParameter("email"), req.getParameter("name"),
-                   req.getParameter("lastname"), Integer.valueOf(req.getParameter("age")));
+            try {
+                MainEngine.Register(req.getParameter("login"),req.getParameter("password"),
+                        req.getParameter("email"), req.getParameter("name"),
+                       req.getParameter("lastname"), Integer.valueOf(req.getParameter("age")));
+            } catch (UserExcistingException e) {
+                req.setAttribute("error","<div class=\"alert alert-danger\" role=\"alert\">" +
+                        e.getMessage() +
+                        "</div>");
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+                req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
+            }
 
 
         }
