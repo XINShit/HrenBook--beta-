@@ -1,9 +1,9 @@
 package hrenbook.engine;
 
 import hrenbook.DB_GLOBAL.neo4j.Connection;
-import hrenbook.friendship.interafaces.AddToFriendable;
-import hrenbook.friendship.interafaces.getMyFriendsable;
-import hrenbook.friendship.interafaces.removeFromFriendable;
+import hrenbook.interfaces.friendship.AddToFriendable;
+import hrenbook.interfaces.friendship.getMyFriendsable;
+import hrenbook.interfaces.friendship.removeFromFriendable;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Transaction;

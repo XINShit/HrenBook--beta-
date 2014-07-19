@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="unnamed">
+  <artifact type="war" build-on-make="true" name="unnamed">
     <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
     <root id="archive" name="unnamed.war">
       <element id="directory" name="WEB-INF">
@@ -7,7 +7,6 @@
           <element id="module-output" name="HrenBook--beta-" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="library" level="project" name="noe4j" />
           <element id="library" level="project" name="mysql-connector-java-5.1.31-bin" />
         </element>

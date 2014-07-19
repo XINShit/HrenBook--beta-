@@ -1,4 +1,4 @@
-package hrenbook.friendship.interafaces;
+package hrenbook.interfaces.friendship;
 
 import org.neo4j.graphdb.Node;
 

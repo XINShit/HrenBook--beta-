@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1945621269">
-    <data-source source="LOCAL" name="MySQL - hrenbookdb@localhost" uuid="bdadfdac-c5f8-4c53-aca9-440e3f707a7f">
+  <component name="DataSourceManagerImpl" format="xml" hash="1555477442">
+    <data-source source="LOCAL" name="MySQL - @localhost" uuid="ac06c294-adba-4bc4-901f-f949aa342864">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/hrenbookdb</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <user-name>root</user-name>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />

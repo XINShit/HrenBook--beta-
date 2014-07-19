@@ -3,11 +3,11 @@
 <head lang="ru">
     <meta charset="UTF-8">
     <title>Авторизация</title>
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/login.css">
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/global.css"/>
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 <body>
 <div class="container">
@@ -23,6 +23,11 @@
         <div class="control-group" id="password">
             <div class="controls">
                 <input type="password" class="input-block-level" placeholder="Password" name="password">
+            </div>
+        </div>
+        <div class="control-group" id="email">
+            <div class="controls">
+                <input type="email" class="input-block-level" placeholder="email" name="email">
             </div>
         </div>
 

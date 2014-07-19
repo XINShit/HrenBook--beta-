@@ -1,6 +1,7 @@
 package hrenbook.auth;
 
 import hrenbook.DB_GLOBAL.MySql.Constant;
+import hrenbook.Exceptions.UserExcistingException;
 import hrenbook.auth.abstracts.Registrator;
 import org.neo4j.graphdb.DynamicLabel;
 import org.neo4j.graphdb.GraphDatabaseService;
@@ -17,7 +18,7 @@ import java.sql.SQLException;
  */
 public class RegistrationImpl2 extends Registrator {
 
-    private void reg_login_and_password(String login, String password, long nodeid) {
+    private void reg_login_and_password(String login, String password, long nodeid) throws UserExcistingException {
         Connection connection = hrenbook.DB_GLOBAL.MySql.Connection.getConnection();
         try {
 
@@ -28,7 +29,7 @@ public class RegistrationImpl2 extends Registrator {
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next() && resultSet.getInt("total")>0) {
 
-                throw new IllegalArgumentException("User exists!Chose other loggin");
+                throw new UserExcistingException("User exists!Chose other loggin");
             }
 
 
@@ -54,7 +55,7 @@ public class RegistrationImpl2 extends Registrator {
      * @param age age
      * @return id NODE
      */
-    private long reg_at_neo4j(String name,String lastname,Integer age) {
+    private long reg_at_neo4j(String name,String lastname,String email,Integer age) {
         GraphDatabaseService graphDB = hrenbook.DB_GLOBAL.neo4j.Connection.getGraphDB();
         Long id = -1l;
         try (Transaction tx = graphDB.beginTx()) {
@@ -62,6 +63,7 @@ public class RegistrationImpl2 extends Registrator {
 
             user.setProperty("name", name);
             user.setProperty("lastname", lastname);
+            user.setProperty("email", email);
             user.setProperty("age", age);
             id = user.getId();
             tx.success();
@@ -72,9 +74,11 @@ public class RegistrationImpl2 extends Registrator {
         return id;
     }
     @Override
-    public void reg(String login, String password, String name, String lastname, Integer age) throws IllegalArgumentException {
+    public void reg(String login, String password,String email, String name, String lastname, Integer age) throws IllegalArgumentException, UserExcistingException {
+        System.out.println("Regging at neo4j");
         //Reg at neo4j
-        long nodeid = reg_at_neo4j(name,lastname,age);
+        long nodeid = reg_at_neo4j(name,lastname,email,age);
+        System.out.println("Regging at mysql");
         //Reg at MYSQL
         reg_login_and_password(login,password,nodeid);
 

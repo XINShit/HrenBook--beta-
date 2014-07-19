@@ -1,4 +1,4 @@
-package hrenbook.friendship.interafaces;
+package hrenbook.interfaces.friendship;
 
 /**
  * Created by student on 7/18/2014.

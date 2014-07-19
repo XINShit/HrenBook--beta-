@@ -11,7 +11,7 @@ public class RegistrationImpl extends Registrator {
 
 
     @Override
-    public void reg(String login, String password, String name, String lastname, Integer age) throws IllegalArgumentException {
+    public void reg(String login, String password,String emeil, String name, String lastname, Integer age) throws IllegalArgumentException {
         GraphDatabaseService graphDB = Connection.getGraphDB();
         try (Transaction tx = graphDB.beginTx()) {
             /*String querry = "MATCH (u:User) WHERE login=" + login + " return u";
