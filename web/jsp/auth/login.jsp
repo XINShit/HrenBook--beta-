@@ -25,7 +25,14 @@
                 <input type="password" class="input-block-level" placeholder="Password" name="password">
             </div>
         </div>
-        ${error}
+
+        <div class="alert alert-danger" role="alert">
+            ${error}
+        </div>
+
+        <div class="control-group">
+            <img src="${gravatar}"  class="img-rounded">
+        </div>
         <input type="submit" class="btn btn-large btn-block btn-primary" value="Войти" name="action">
     </form>
 </div>

@@ -1,7 +1,10 @@
 package servlet_classes.auth;
 
+import hrenbook.DB_GLOBAL.neo4j.Utils;
+import hrenbook.Exceptions.UserNotFoundByIdException;
 import hrenbook.Exceptions.WrongPasswordEexception;
 import hrenbook.engine.MainEngine;
+import hrenbook.engine.UserProfileEngine;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -34,13 +37,23 @@ public class login extends HttpServlet {
             } catch (WrongPasswordEexception wrongPasswordEexception) {
                 wrongPasswordEexception.printStackTrace();
 
-                req.setAttribute("error","<div class=\"alert alert-danger\" role=\"alert\">" +
-                        wrongPasswordEexception.getMessage() +
-                        "</div>");
+                req.setAttribute("error",wrongPasswordEexception.getMessage());
 
             } catch (Exception e){
                 e.printStackTrace();
                 req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
+            }
+        }
+
+        Long myId = MainEngine.getIdFromSSID(req.getSession().getId());
+        if(myId != null) {
+            try {
+                req.setAttribute("gravatar",
+                        new UserProfileEngine().getGravatar(myId));
+
+            } catch (UserNotFoundByIdException e) {
+                req.getRequestDispatcher("/jsp/error/404.htm").forward(req, resp);
+                e.printStackTrace();
             }
         }
         req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);

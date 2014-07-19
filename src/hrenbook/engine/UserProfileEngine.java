@@ -7,6 +7,8 @@ import hrenbook.utils.MD5Util;
 /**
  * Created by Beta on 7/19/14.
  */
+//TODO все функии должны быть не по id а по ssid
+
 public class UserProfileEngine implements getGravatarable {
     private static final String gravatarURL = "http://www.gravatar.com/avatar/";
     @Override
@@ -14,5 +16,6 @@ public class UserProfileEngine implements getGravatarable {
         //TODO захешировать ссылки на граватары, при выходе удалять из хеша!
         return gravatarURL + MD5Util.md5Hex(hrenbook.DB_GLOBAL.neo4j.
                 Utils.getProfileInfos(id).getProperty("email"));
+
     }
 }

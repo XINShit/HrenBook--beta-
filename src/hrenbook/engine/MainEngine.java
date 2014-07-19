@@ -25,7 +25,8 @@ public class MainEngine {
         runned = true;
     }
     private static HashMap<String,Long> idStorage = new HashMap<>();
-    public static long getMyId(String jsessionid) {
+    public static Long getIdFromSSID(String jsessionid) {
+
         return idStorage.get(jsessionid);
     }
 
@@ -47,5 +48,7 @@ public class MainEngine {
 
         idStorage.remove(ssid);
     }
-
+    public Long getIdFromSSI(String ssid) {
+        return idStorage.get(ssid);
+    }
 }

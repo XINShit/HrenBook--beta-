@@ -21,6 +21,7 @@ public class LoginImpl2 extends Loginer {
     }
     @Override
     public long login(String login, String password) throws IllegalArgumentException, WrongPasswordEexception {
+
         System.out.println("Loginning...");
         if(!validate(login) || !validate(password)) {
             throw new IllegalArgumentException("Bad symbols!!!");
