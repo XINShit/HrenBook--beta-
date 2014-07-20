@@ -22,6 +22,10 @@
       <root url="jar://$PROJECT_DIR$/lib/parboiled-core-1.1.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/parboiled-scala_2.10-1.1.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/scala-library-2.10.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-asl-1.9.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-mapper-asl-1.9.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/neo4j-rest-graphdb-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jersey-bundle-1.17.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

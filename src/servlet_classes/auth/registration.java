@@ -46,6 +46,6 @@ public class registration extends HttpServlet {
 
 
         }
-        req.getRequestDispatcher("/jsp/auth/registration.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);
     }
 }

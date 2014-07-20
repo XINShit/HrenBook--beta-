@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe71e794-009d-4224-9b6a-aca595775c84" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet_classes/auth/logout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/auth/logout.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/profile.jsp" />
-      <change type="MOVED" beforePath="C:\Users\Beta\Documents\GitHub\HrenBook--beta-\src\servlet_classes\t.java" afterPath="$PROJECT_DIR$/src/servlet_classes/profile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/engine/UserProfileEngine.java" afterPath="$PROJECT_DIR$/src/hrenbook/engine/UserProfileEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Utils.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet_classes/auth/login.java" afterPath="$PROJECT_DIR$/src/servlet_classes/auth/login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jackson-core-asl-1.9.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jackson-mapper-asl-1.9.11.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jersey-bundle-1.17.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/neo4j-rest-graphdb-2.0.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java" afterPath="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/noe4j.xml" afterPath="$PROJECT_DIR$/.idea/libraries/noe4j.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet_classes/auth/registration.java" afterPath="$PROJECT_DIR$/src/servlet_classes/auth/registration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HrenBook--beta-.iws" />
@@ -29,7 +30,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -65,6 +66,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -74,13 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registration.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="registration.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="12" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1254">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="48" column="49" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.41549295" vertical-offset="740" max-vertical-offset="1056">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +88,16 @@
       <file leaf-file-name="profile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet_classes/profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="42" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1122">
+            <state line="21" column="42" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/logout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="30" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="616">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,13 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/logout.java">
+      <file leaf-file-name="Connection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="27" selection-start="657" selection-end="657" vertical-scroll-proportion="0.34868422" vertical-offset="312" max-vertical-offset="616">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="17" column="50" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="660">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +117,7 @@
       <file leaf-file-name="UserProfileEngine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/UserProfileEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="814">
+            <state line="20" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1012">
               <folding />
             </state>
           </provider>
@@ -119,7 +126,25 @@
       <file leaf-file-name="Constant.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="352">
+            <state line="17" column="65" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="550">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constant.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="80" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
@@ -149,7 +174,6 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/Constant.java" />
-        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/main.java" />
         <option value="$PROJECT_DIR$/src/q.java" />
@@ -170,17 +194,14 @@
         <option value="$PROJECT_DIR$/src/hrenbook/utils/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/registration.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/Exceptions/UserNotFoundByIdException.java" />
-        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/auth/abstracts/Registrator.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/auth/old/RegistrationImpl.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/Runner.java" />
-        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/hrenbook/Exceptions/WrongPasswordEexception.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/Exceptions/LoginExcistingException.java" />
         <option value="$PROJECT_DIR$/src/hrenbook/auth/RegistrationImpl2.java" />
         <option value="$PROJECT_DIR$/web/jsp/error/404 Not Found.htm" />
-        <option value="$PROJECT_DIR$/src/servlet_classes/auth/registration.java" />
         <option value="$PROJECT_DIR$/web/jsp/auth/registration.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/error/404.htm" />
         <option value="$PROJECT_DIR$/web/jsp/404.htm" />
@@ -196,6 +217,10 @@
         <option value="$PROJECT_DIR$/src/hrenbook/engine/UserProfileEngine.java" />
         <option value="$PROJECT_DIR$/src/servlet_classes/profile.java" />
         <option value="$PROJECT_DIR$/src/servlet_classes/auth/logout.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java" />
+        <option value="$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java" />
+        <option value="$PROJECT_DIR$/src/servlet_classes/auth/registration.java" />
       </list>
     </option>
   </component>
@@ -259,6 +284,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,100 +331,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -440,100 +372,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hrenbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hrenbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hrenbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB_GLOBAL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neo4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HrenBook--beta-" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hrenbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB_GLOBAL" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -546,11 +389,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jersey-bundle-1.17.2.jar!/" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -558,6 +401,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Beta\Documents\GitHub\restorehrenbook\HrenBook--beta-\lib" />
       <recent name="C:\Users\Beta\Documents\GitHub\HrenBook--beta-\web\css" />
       <recent name="C:\Users\Beta\Documents\GitHub\HrenBook--beta-\web\jsp\error" />
       <recent name="C:\Users\student\Documents\GitHub\HrenBook--beta-\lib" />
@@ -865,6 +709,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -882,12 +732,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="HrenBook_Local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.54" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk1.7.0_60">
@@ -968,9 +812,9 @@
       </method>
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.q" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.HrenBook_Local" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.HrenBook_Local" />
+      <item index="1" class="java.lang.String" itemvalue="Application.main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.q" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -1001,6 +845,7 @@
       <workItem from="1405673712295" duration="466000" />
       <workItem from="1405674198466" duration="6020000" />
       <workItem from="1405753874243" duration="22506000" />
+      <workItem from="1405848705887" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="Upload full working project on TOMCAT with libs">
       <created>1405673921760</created>
@@ -1030,7 +875,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29997000" />
+    <option name="totallyTimeSpent" value="30934000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1058,43 +903,43 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19864048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41666666" sideWeight="0.33912387" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23716012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41666666" sideWeight="0.66087615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35204083" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19864048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41666666" sideWeight="0.33912387" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23716012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.414966" sideWeight="0.66087615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35204083" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19864048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19864048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41666666" sideWeight="0.33912387" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1115,8 +960,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1165,17 +1010,13 @@
     <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/registration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java">
@@ -1209,9 +1050,7 @@
     <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/registration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,18 +1070,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/interfaces/friendship/removeFromFriendable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/interfaces/friendship/getMyFriendsable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/old/LoginImpl.java">
@@ -1254,46 +1087,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HrenBook--beta-.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.8324226" vertical-offset="335" max-vertical-offset="924">
-          <folding />
-        </state>
+        <state line="36" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.8324226" vertical-offset="335" max-vertical-offset="924" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6006" selection-start="6226" selection-end="6226" vertical-scroll-proportion="0.32058287" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
+        <state line="8" column="6006" selection-start="6226" selection-end="6226" vertical-scroll-proportion="0.32058287" vertical-offset="0" max-vertical-offset="549" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/interfaces/friendship/AddToFriendable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/Exceptions/UserNotFoundByIdException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="168" selection-end="168" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="682">
-          <folding />
-        </state>
+        <state line="6" column="40" selection-start="168" selection-end="168" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="682" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/utils/MD5Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.081330866" vertical-offset="0" max-vertical-offset="660">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.081330866" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/engine/FriendShipEngine.java">
@@ -1306,27 +1125,6 @@
     <entry file="file://$PROJECT_DIR$/src/neo4j/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="903" max-vertical-offset="1452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="145" selection-end="155" vertical-scroll-proportion="0.32592592" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.3037037" vertical-offset="277" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="-0.15555556" vertical-offset="217" max-vertical-offset="638">
           <folding />
         </state>
       </provider>
@@ -1361,23 +1159,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="-2.64" vertical-offset="0" max-vertical-offset="220">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="-2.64" vertical-offset="0" max-vertical-offset="220" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/Exceptions/WrongPasswordEexception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="682">
-          <folding />
-        </state>
+        <state line="6" column="38" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="682" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/Exceptions/UserExcistingException.java">
@@ -1392,8 +1184,6 @@
         <state line="82" column="29" selection-start="3106" selection-end="3106" vertical-scroll-proportion="0.0" vertical-offset="1061" max-vertical-offset="1650">
           <folding>
             <element signature="docComment;method#reg_at_neo4j#0;class#RegistrationImpl2#0" expanded="false" />
-            <marker date="1405762196272" expanded="true" signature="-1:-1" placeholder="SELECT count..users..." />
-            <marker date="1405762196272" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -1407,9 +1197,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/interfaces/userprofile/getGravatarable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
-        </state>
+        <state line="10" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/auth/registration.jsp">
@@ -1436,17 +1224,13 @@
     <entry file="file://$PROJECT_DIR$/src/hrenbook/auth/LoginImpl2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1078">
-          <folding>
-            <marker date="1405786655673" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="122" selection-end="122" vertical-scroll-proportion="0.3618421" vertical-offset="0" max-vertical-offset="2068">
-          <folding />
-        </state>
+        <state line="5" column="34" selection-start="122" selection-end="122" vertical-scroll-proportion="0.3618421" vertical-offset="0" max-vertical-offset="2068" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/auth/logout.jsp">
@@ -1479,22 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1254">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
@@ -1512,18 +1280,51 @@
     <entry file="file://$PROJECT_DIR$/src/servlet_classes/profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="42" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/neo4j/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="65" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hrenbook/DB_GLOBAL/MySql/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="80" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/logout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="616">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/logout.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet_classes/auth/registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="657" selection-end="657" vertical-scroll-proportion="0.34868422" vertical-offset="312" max-vertical-offset="616">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="48" column="49" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.41549295" vertical-offset="740" max-vertical-offset="1056">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1534,10 +1335,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="jpa-descriptors" />
-              <type id="artifact" />
               <type id="javaee-facet-resources" />
               <type id="library" />
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>unnamed</last-edited>
@@ -1600,7 +1401,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javax.annotation</last-edited>
+          <last-edited>noe4j</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
